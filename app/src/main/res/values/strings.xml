@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Rockets</string>
+
+
+    <string name="rocket_height_feet">%1$s ft</string>
+    <string name="spacex_rockets">SPACEX ROCKETS</string>
+    <string name="launch_vehicle">LAUNCH VEHICLE</string>
+    <string name="height">Height</string>
+    <string name="info">+ info</string>
+</resources>
