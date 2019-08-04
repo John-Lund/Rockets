@@ -7,3 +7,6 @@ It has been interesting using databinding in the xml and shifting a lot of code 
 I hope you like the project.
 ### **Sample UI images**
 
+![image](https://user-images.githubusercontent.com/36385109/62421647-234ed380-b69d-11e9-96e9-1eb595ded307.png)
+
+![image](https://user-images.githubusercontent.com/36385109/62421678-5b561680-b69d-11e9-9981-5cb265211d30.png)
