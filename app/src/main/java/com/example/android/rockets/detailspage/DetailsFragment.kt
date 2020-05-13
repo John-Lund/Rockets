@@ -34,7 +34,7 @@ class DetailsFragment : Fragment() {
 
         binding.viewModel = viewModel
 
-        viewModel.wikiUrlString.observe(this, Observer {
+        viewModel.wikiUrlString.observe(viewLifecycleOwner, Observer {
             it?.let {
                 val uri = Uri.parse(it)
                 val intent = Intent(Intent.ACTION_VIEW, uri)

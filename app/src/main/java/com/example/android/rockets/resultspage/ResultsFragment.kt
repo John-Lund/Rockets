@@ -25,7 +25,7 @@ class ResultsFragment : Fragment() {
         binding.resultsRecyclerView.adapter = ResultsAdapter(ResultsAdapter.OnClickListener {
             viewModel.displayDetailsfragment(it)
         })
-        viewModel.navigateToSelectedRocket.observe(this, Observer {
+        viewModel.navigateToSelectedRocket.observe(viewLifecycleOwner, Observer {
             it?.let {
                 this.findNavController().navigate(ResultsFragmentDirections.actionResultsFragmentToDetailsFragment(it))
                 viewModel.navigateToDetailsFragmentComplete()
