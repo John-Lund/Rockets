@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
 import com.example.android.rockets.databinding.FragmentResultsBinding
@@ -11,7 +12,7 @@ import com.example.android.rockets.databinding.FragmentResultsBinding
 class ResultsFragment : Fragment() {
 
     private val viewModel: ResultsViewModel by lazy {
-        ViewModelProviders.of(this).get(ResultsViewModel::class.java)
+        ViewModelProvider(this).get(ResultsViewModel::class.java)
     }
 
     override fun onCreateView(

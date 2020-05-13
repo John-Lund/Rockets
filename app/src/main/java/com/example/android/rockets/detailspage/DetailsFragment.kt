@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import com.example.android.rockets.databinding.FragmentDetailsBinding
 
@@ -27,7 +28,7 @@ class DetailsFragment : Fragment() {
 
         val rocket = DetailsFragmentArgs.fromBundle(arguments!!).selectedRocket
         val viewModelFactory = DetailsViewModelFactory(rocket, application)
-        val viewModel = ViewModelProviders.of(
+        val viewModel = ViewModelProvider(
             this, viewModelFactory
         )
             .get(DetailsViewModel::class.java)
