@@ -27,7 +27,12 @@ android {
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
-
+    lintOptions {
+        quiet false
+        abortOnError true
+        ignoreWarnings true
+        checkReleaseBuilds false
+    }
 
     buildTypes {
         release {
